@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply min-h-screen bg-charcoal text-white;
+  }
+}
+
+@layer components {
+  .card-surface {
+    @apply rounded-xl border border-white/10 bg-navy shadow-lg;
+  }
+  .league-header {
+    @apply flex items-center justify-between rounded-t-xl bg-gradient-to-r from-electric-dim to-electric px-4 py-2.5 text-sm font-semibold uppercase tracking-wide;
+  }
+  .odds-btn {
+    @apply flex min-w-[4.5rem] flex-col items-center rounded-lg border border-white/10 bg-navy-light px-2 py-1.5 text-xs transition hover:border-electric/50;
+  }
+  .odds-btn-selected {
+    @apply border-purpleOdds bg-purpleOdds/20 ring-1 ring-purpleOdds;
+  }
+}
